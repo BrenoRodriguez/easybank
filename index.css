@@ -21,7 +21,7 @@ body{
 .title-box{
     display: flex;
     justify-content: center;
-    margin: 4rem 0 3rem;
+    margin: 3rem 0 3rem;
     font-family: 'Merriweather', serif;
     font-size: 30px;
     gap: 2rem;
