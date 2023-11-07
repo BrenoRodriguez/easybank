@@ -1,0 +1,172 @@
+:root{
+    font-size: 16px;
+    --primary-bg-color: #17171f ; 
+    --secondary-bg-color: #2a2a36 ;
+    --tertiary-bg-color: #30303f ;
+    --text-color: #f1f5f9 ;
+    --secondary-text-color:#ffffff ;
+    --accent-color: #e9872b ;
+    --bright-accent-color: #fa9f4a ;
+    --transition-speed: 600ms;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--secondary-bg-color);
+    transition: width 500ms ease;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item{
+    width: 100%;
+}
+
+.nav-item:last-child{
+    margin-top: auto;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(1) brightness(0.8);
+    transition: var(--transition-speed);
+}
+
+.nav-link:hover{
+    filter:grayscale(0%) opacity(1);
+    background-color: var(--bg-secondary);
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    fill: var(--accent-color);
+    transition: var(--transition-speed)
+}
+
+.navbar:hover{
+    width: 16rem;
+    transition: width 500ms ease;
+}
+
+.navbar:hover .link-text{
+    display: block;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 3rem;
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    gap: 0 2rem
+}
+
+.header h1{
+    margin-top: 1rem;
+}
+
+.app-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sub-title{
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.queue-container{
+    background-color: var(--secondary-bg-color);
+    border-radius: 15px;
+    border: 3px solid var(--accent-color);
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.queue-title{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.queue{
+    color: var(--accent-color);
+    font-family: 'Merriweather', serif;
+    font-size: 60px;
+}
+
+.action-button{
+    height: 5vh;
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color) ;
+    border-radius: 5px;
+    border: 2px solid var(--accent-color);
+    width: 15rem;
+    font-size: large;
+    margin: 0 0.75rem;
+}
+
+#agency{
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    height: 5vh;
+    width: 15rem;
+    font-size: large;
+    padding-left: 0.85rem;
+    
+}
+
+.orange-text{
+    color: var(--accent-color);
+}
+
+.agency-container{
+    display: flex;
+    gap: 5rem;
+}
+.agency-container label{
+    font-size: 1.5rem;
+    padding-right: 1rem ;
+}

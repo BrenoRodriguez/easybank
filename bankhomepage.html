@@ -1,15 +1,15 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial Usuário - Easy Bank</title>
-    <link rel="stylesheet" href="userhomepage.css">
+    <title>Página Inicial Banco - Bank Easy</title>
+    <link rel="stylesheet" href="bankhomepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto+Slab:wght@300&family=Rubik&display=swap" rel="stylesheet">
- </head>
- <body>
+</head>
+<body>
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -51,36 +51,24 @@
     <main class="app-container">
         <h2 class="sub-title">Fila do Banco</h2>
         <div class="agency-container">
-            <label for="bank">Banco:</label>
-            <select>
-                <option>Bank 1</option>
-                <option>Bank 2</option>
-                <option>Bank 3</option>
-            </select>
             <label for="agency">Agência:</label>
-            <select>
-                <option>Agency 1</option>
-                <option>Agency 2</option>
-                <option>Agency 3</option>
+            <select id="agency">
+                <option>Test 1</option>
+                <option>Test 2</option>
+                <option>Test 3</option>
             </select>
         </div>
         <div class="queue-container">
-            <div class="grid area1">
-                <p class="queue-title">Sua Senha:</p>
-                <p class="queue">1</p>
-            </div>
-            <span id="vertical-divisor" class="grid area2"></span>
-            <div class=" grid area3">
-                <p class="bank-queue-title">Senha Atual:</p>
-                <p class="bank-queue">1</p>
-            </div>
+            <p class="queue-title">Sua senha:</p>
+            <p class="queue">1</p>
         </div>
         <div>
-            <label for="insert-queue">Insira sua senha da fila:</label>
-            <input type="text">
-        </div>
-        <button>Inserir</button>
-
+            <button class="action-button">Nova Senha</button>
+            <button class="action-button">Voltar Senha</button>
+            <button class="action-button">Inserir Senha</button>
+            <button class="action-button">Resetar Senha</button>
+        </div>  
     </main>
- </body>
- </html>
+    
+</body>
+</html>
