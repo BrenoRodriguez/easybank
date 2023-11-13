@@ -18,8 +18,6 @@
 body{
     background-color: var(--primary-bg-color);
     color: var(--text-color);
-    margin: 0;
-    padding: 0;
 }
 
 .navbar{
@@ -86,19 +84,24 @@ body{
 
 .header{
     display: flex;
+    font-size: 1.7rem;
+    gap: 0.5em;
     justify-content: center;
-    padding: 3rem 0 3rem;
-    font-family: 'Merriweather', serif;
-    font-size: 30px;
-    gap: 0 2rem
+    align-items:flex-end ;
+    padding-top: 3em;
 }
 
 .header h1{
-    margin-top: 1rem;
+   margin-bottom: -0.125em;
 }
 
 .orange-text{
     color: var(--accent-color);
+}
+
+.sub-title{
+    font-size: 1.9rem;
+    font-weight: 300;
 }
 
 .app-container{
@@ -106,59 +109,19 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 2em;
+    margin-top: 5em;
 }
 
-.sub-title{
-    font-family: 'Merriweather', serif;
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.queue-container{
-    display: flex;    
-    background-color: var(--secondary-bg-color);
-    border-radius: 15px;
-    border: 3px solid var(--accent-color);
-    width: 50%;
-    height: 40vh;
+.agency-container{
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
+    gap: 2em;
 }
-
-#vertical-divisor{
-    background-color: var(--accent-color);
-    width: 0.25rem;
-    height: 38vh;
-    border-radius: 5px ;
-    
-}
-
-.queue-title{
-    font-size: 30px;
-    font-weight: 100;
-    text-align: center;
-}
-
-.bank-queue-title{
-    font-size: 30px;
-    font-weight: 100;
-    text-align: center;
-}
-
-.queue{
-    color: var(--accent-color);
-    font-family: 'Merriweather', serif;
-    font-size: 60px;
-    text-align: center;
-}
-
-.bank-queue{
-    color: var(--accent-color);
-    font-family: 'Merriweather', serif;
-    font-size: 60px;
-    text-align: center;
+.agency-container label{
+    font-size: 1.125rem;
+    margin-right: 1em;
 }
 
 .agency-container select{
@@ -166,18 +129,78 @@ body{
     color: var(--text-color);
     border: 2px solid var(--accent-color);
     border-radius: 5px;
-    height: 5vh;
-    width: 15rem;
-    font-size: large;
+    height: 4vh;
+    width: 12em;
+    font-size: 1.125rem;
+    padding-left: 1em;
+   
 }
 
-.agency-container label{
-    font-size: 1.5rem;
+
+
+#vertical-divisor{
+    border-radius: 5px;
+    height: 38vh;
+    width: 0.1vw;
+    background-color: var(--accent-color);
+
 }
 
-.agency-container{
+.queue-container{
+    display: flex; 
+    align-items: center;
+    border-radius: 10px;
+    border: 5px solid var(--accent-color);
+    height: 40vh;
+    width: 50vw;
+    justify-content: center;
+    gap: 7em;
+}
+
+.queue-title{
+    font-size: 2.75rem;
+}
+
+.queue{
+    font-size: 5rem;
+    color: var(--accent-color);
+}
+
+.bank-queue-title{
+    font-size: 2.75rem;
+}
+
+.bank-queue{
+    font-size: 5rem;
+    color: var(--accent-color);
+}
+
+.user-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+}
+
+.bank-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#insertQueueUser{
+    min-height: 4.5vh;
+    width: 12vw;
+    font-size: 1.45rem;
+    border-radius: 10px;
+    border: 3px solid var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--text-color);   
+}
+
+#insertQueueUser:hover{
+    background-color: var(--bright-accent-color);
+    color: var(--secondary-text-color);
+    cursor: pointer;
 }
