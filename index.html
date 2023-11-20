@@ -1,3 +1,24 @@
+<?php
+    if (isset$_POST['login-button'])
+    {
+        include_once('easy_bank.php');
+        $nome = $_POST['nome'];
+        $email = $_POST['e-mail'];
+        $senha = $_POST['password'];
+        
+        $result = mysqli_query($conexao,"INSERT INTO tb_usuario(nome,email,senha) VALUES ('$nome', '$email', '$senha')")
+        
+    } if (isset$_POST['login-button-bank']) {
+        include_once('easy_bank.php');
+        $nomebanco = $_POST['bank-name'];
+        $emailbanco = $_POST['bank-email'];
+        $senhabanco = $_POST['bank-password'];
+        
+        $result = mysqli_query($conexao,"INSERT INTO tb_usuario(nome,email,senha) VALUES ('$nome', '$email', '$senha')")
+    } 
+
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,7 +39,7 @@
     </header>
     <main>
         <h2 class="sub-title">Entre Na Sua Conta</h2>
-        <form  class="login">
+        <form  class="login" method="POST">
             <label for="username" class="form-label">Já tem cadastro? Digite seu e-mail de cadastro</label>
             <input type="text" id="username" class="form-input" placeholder="Digite seu e-mail" required>
             <label for="password" class="form-label">Senha</label>
