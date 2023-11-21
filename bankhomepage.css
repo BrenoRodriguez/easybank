@@ -157,7 +157,7 @@ body{
     gap: 1em;
 }
 
-.action-button{
+.login-button-bank{
     min-height: 4.5vh;
     width: 12vw;
     font-size: 1.45rem;
@@ -167,7 +167,7 @@ body{
     color: var(--text-color);   
 }
 
-.action-button:hover{
+.login-button-bank:hover{
     background-color: var(--bright-accent-color);
     color: var(--secondary-text-color);
     cursor: pointer;
