@@ -8,3 +8,5 @@ Integrantes do Grupo:
 * Gilcimar Salviano Oliveira de Faria
 * Juliana Veloso de Arruda
 * Joao Vitor Damasceno Muniz
+
+Para testar a aplicação, baixe os arquivos e abra o index.html
