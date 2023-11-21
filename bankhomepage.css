@@ -172,3 +172,72 @@ body{
     color: var(--secondary-text-color);
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .queue-container{
+        height: fit-content;
+    }
+    .navbar {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+    }
+  
+    .nav-link {
+      justify-content: center;
+    }
+  
+    main {
+      margin: 0;
+    }
+  }
+  @media(max-width: 768px){
+    .queue-title{
+        font-size: 2rem;
+       
+    }
+    .queue{
+        font-size: 3rem;
+    }
+    .action-button{
+        font-size: 1rem;
+        width: 18vw ;
+    }
+
+
+  }  
+  @media only screen and (min-width: 600px) {
+    .navbar {
+      top: 0;
+      width: 5rem;
+      height: 100vh;
+    }
+  
+    .navbar:hover {
+      width: 16rem;
+    }
+  
+    .navbar:hover .link-text {
+      display: inline;
+    }
+  
+    .navbar:hover .logo svg
+    {
+      margin-left: 11rem;
+    }
+  
+    .navbar:hover .logo-text
+    {
+      left: 0px;
+    }
+  }
+  
